@@ -36,11 +36,11 @@ var e;
     document.getElementById("row").innerHTML+=` <div class="col-xxl-3 col-lg-4 col-md-6">
     <div class="card" style="width: 100%">
        
-        <img src="${e[i].poster[0]}" class="card-img-top poster" alt="...">
+        <img src="${e[i].poster[3]}" class="card-img-top poster" alt="...">
         <div class="card-body">
             <h5 class="card-title">${e[i].title}</h5>
             <p class="card-text">${e[i].details}</p>
-            <a href="./page2.html"  class="btn btn-primary"  onClick="saveData('${i}')">Go somewhere</a>
+            <a href="./page2.html"  class="btn btn-primary"  onClick="saveData('${i}')">Trailer</a>
         </div>
     </div>
 </div>`
