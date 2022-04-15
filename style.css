@@ -1,0 +1,9 @@
+.bg-pink{
+    background-color: rgb(203, 5, 5);
+}
+
+.poster{
+    width:300px;
+    height: 400px;
+    object-fit: cover;
+}
