@@ -50,4 +50,6 @@ var e;
 function saveData(i){
     console.log(e[i]);
     localStorage.setItem("name",JSON.stringify(e[i]));
+    localStorage.setItem("detail",JSON.stringify(e[i]));
+    localStorage.setItem("img",JSON.stringify(e[i]));
 }
