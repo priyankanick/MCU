@@ -33,13 +33,13 @@ var e;
        <span class="carousel-control-next-icon" aria-hidden="true"></span>
        <span class="visually-hidden">Next</span>
      </button></div>`
-    document.getElementById("row").innerHTML+=` <div class="col-xxl-3 col-lg-4 col-md-6">
-    <div class="card" style="width: 100%">
+    document.getElementById("row").innerHTML+=` <div class="col-xxl-3 col-lg-4 col-md-6 mb-5">
+    <div class="card" style="width: 100%;">
        
         <img src="${e[i].poster[3]}" class="card-img-top poster" alt="...">
         <div class="card-body">
-            <h5 class="card-title">${e[i].title}</h5>
-            <p class="card-text">${e[i].details}</p>
+            <h5 class="card-title hide-text">${e[i].title}</h5>
+            <p class="card-text hide-text">${e[i].details}</p>
             <a href="./page2.html"  class="btn btn-primary"  onClick="saveData('${i}')">Trailer</a>
         </div>
     </div>
@@ -50,6 +50,4 @@ var e;
 function saveData(i){
     console.log(e[i]);
     localStorage.setItem("name",JSON.stringify(e[i]));
-    localStorage.setItem("detail",JSON.stringify(e[i]));
-    localStorage.setItem("img",JSON.stringify(e[i]));
 }

@@ -7,3 +7,20 @@
     height: 400px;
     object-fit: cover;
 }
+
+.titel-text{
+    color:antiquewhite !important;
+}
+
+.hide-text {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+  
+  .hide-text:hover {
+     white-space: unset;
+     text-overflow: unset;
+  }
