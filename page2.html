@@ -11,7 +11,7 @@
 <body>
 
   <div class="card" style="width: 18rem;">
-    <img src="" id="img" class="card-img-top col-xxl-3 col-lg-4 col-md-6 mb-5" alt="...">
+    <img src="" id="img" class="card-img-top col-xxl-3 col-lg-4 col-md-6 mb-5" style="height: 300px ;" alt="...">
     <div class="card-body">
       <h5 class="card-title"><div id="name"></div></h5>
       <p class="card-text"><div id="detail"></div> </div>
@@ -32,9 +32,8 @@
     console.log("details===>",d.details)
     document.getElementById("detail").innerHTML = d.details
 
-    let pos = JSON.parse(localStorage.getItem("img"));
-    console.log("poster===>",pos.poster)
-    document.getElementById("img").src= pos.poster[3];
+    document.getElementById("img").src= data.poster[1];
+
     document.getElementById("trailer").href= data.trailer;
 
 </script>
